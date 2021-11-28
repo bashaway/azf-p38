@@ -1,5 +1,5 @@
 import logging
-
+import os
 import azure.functions as func
 
 
@@ -18,6 +18,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     if name:
         return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
     else:
+        my_app_setting_value = os.environ["custom_secret_string"]
+        logging.info(f'My app setting value:{my_app_setting_value}')
         return func.HttpResponse(
              "azf-p38 functions.",
              status_code=200
