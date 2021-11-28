@@ -3,3 +3,11 @@
 # Manually managing azure-functions-worker may cause unexpected issues
 
 azure-functions
+
+# Python3.8
+python-pptx
+fitz
+
+# https://stackoverflow.com/questions/56467667/how-do-i-resolve-no-module-named-frontend-error-message
+# PyMuPDF : frontend error
+PyMuPDF == 1.16.14
