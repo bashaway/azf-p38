@@ -1,4 +1,4 @@
-![workflow status](https://github.com/bashaway/azf-p38/actions/workflows/main.yml/badge.svg)(https://github.com/bashaway/azf-p38/actions)
+[![workflow status](https://github.com/bashaway/azf-p38/actions/workflows/main.yml/badge.svg)](https://github.com/bashaway/azf-p38/actions)
 
 # azf-p38
 
