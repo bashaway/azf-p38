@@ -1,4 +1,5 @@
 import logging
+import os
 import http.client, urllib.request, urllib.parse, urllib.error, base64, json
 import azure.functions as func
 from base64 import b64decode
