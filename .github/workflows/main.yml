@@ -1,4 +1,5 @@
-name: Deploy Python project to function app
+# ここでつけた名前がバッジのタイトルになる
+name: Deploy azf-p38
 
 on:
   [push]
