@@ -13,3 +13,14 @@ Collecting PyMuPDF==1.16.14
   Downloading PyMuPDF-1.16.14-cp38-cp38-manylinux2010_x86_64.whl (5.7 MB)
 ```
 
+
+PyMuPDFがうまく動作しなかったが、VisualStudioCodeとAzureプラグインを利用してデプロイすると動作していた。
+
+ログの差異を確認すると、VSCodeではoryxでビルドしているようだったので、GitHubActionsのワークフローファイルに以下のオプションを付与して、
+oryxでのビルドをしたら動作するようになった。理由は不明。
+
+```
+# for PyMuPDF build
+scm-do-build-during-deployment: true
+enable-oryx-build: true
+```
